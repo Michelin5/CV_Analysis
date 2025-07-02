@@ -9,7 +9,7 @@ load_dotenv(override=True)
 GIGA_CREDENTIALS = os.environ.get("GIGACHAT_TOKEN")
 giga_client = None
 try:
-    giga_client = GigaChat(credentials=GIGA_CREDENTIALS, verify_ssl_certs=False, model="GigaChat-2-Max")
+    giga_client = GigaChat(credentials=GIGA_CREDENTIALS, verify_ssl_certs=False, model="GigaChat-2")
 except Exception as e:
     print(f"[ОШИБКА GigaChat Init] {e}")
 
